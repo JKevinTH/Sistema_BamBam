@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Login.css">
+</head>
+<body>
+
+    <div class="imagen_logo">
+        <img src="Img/logoN.jpeg" alt="">
+    </div>
+    <div class="formulario">
+        <h1>Inicio de sesión</h1>
+        
+        <form method="post" action="#">
+            <div class="campo">
+                <input type="text" name="usuario" required>
+                <span></span>
+                <label>Nombre de usuario</label>
+            </div>
+            <div class="campo">
+                <input type="password" name="contrasena" required>
+                <span></span>
+                <label>Contraseña</label>
+            </div>
+            <div class="recordar">¿Olvidó su contraseña?</div>
+            <input type="submit" value="Iniciar">
+            <div class="registrarse">
+                Quiero hacer el <a href="#">registro</a>
+            </div>
+        </form>
+    </div>
+    <script src="../JS.js"></script>
+</body>
+</html>

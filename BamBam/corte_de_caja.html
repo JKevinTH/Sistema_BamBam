@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="corte_caja.css">
+</head>
+<body>
+
+    <header>
+
+        <nav class="sidebar">
+            
+            <h2>Pizzeria BAMBAM</h2>
+            <a href="index.html">Inicio</a>
+            <a href="ventas.html">Ventas</a>
+            <a href="#" class="activo">Corte de caja</a>
+            <a href="transacciones.html">Inventario</a>
+
+            <hr>
+
+            <div class="menu_inferior">
+                <a href="login/login.html" class="cerrar-sesion">
+                Cerrar sesión
+                </a>
+            </div>
+            
+        </nav>
+
+        
+
+    </header>
+
+    <main class="contenido">
+
+        <section class="inicio">
+            
+            <div class="inicio_texto">
+                <h1>
+                    Corte de Caja
+                </h1>
+            </div>
+
+            <div class="botones">
+                <div class="boton_pdf">
+                    <input type="button" value="Exportar PDF">
+                    
+                </div>
+
+                <div class="boton_guardar">
+                    <input type="button" onclick="alert('Corte de caja guardado')" value="Guardar corte">
+                </div>
+
+            </div>
+
+            <div class="inicio_usuario">
+
+                <div class="Usuario">
+                    <p>Usuario: Alonso</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="tarjetas">
+
+            <div class="tarjeta">
+                <h3>Efectivo al inicio</h3>
+                <p>$ 2,277</p>
+            </div>
+        
+            <div class="tarjeta">
+                <h3>Efectivo al final</h3>
+                <p>$4,550</p>
+            </div>
+        
+            <div class="tarjeta_diferencia">
+                <h3>Diferencia de turno</h3>
+                <p>$2,275</p>
+            </div>
+
+        </section>
+
+        <section class="tabla_contenedor">
+            <table class="tabla_corte">
+                <thead>
+                    <tr>
+                        <th>Moneda / Billete</th>
+                        <th>Cant. inicio</th>
+                        <th>Dinero inicio</th>
+                        <th>Cant. final</th>
+                        <th>Dinero final</th>
+                    </tr>  
+                </thead>
+                <tr>
+                    <td>$1</td>
+                    <td>10</td>
+                    <td>$10</td>
+                    <td>20</td>
+                    <td>$20</td>
+                </tr>
+                <tr>
+                    <td>$1</td>
+                    <td>10</td>
+                    <td>$10</td>
+                    <td>20</td>
+                    <td>$20</td>
+                </tr>
+                <tr>
+                    <td>$1</td>
+                    <td>10</td>
+                    <td>$10</td>
+                    <td>20</td>
+                    <td>$20</td>
+                </tr>
+                <tr>
+                    <td>$1</td>
+                    <td>10</td>
+                    <td>$10</td>
+                    <td>20</td>
+                    <td>$20</td>
+                </tr>
+                <tr>
+                    <td>$1</td>
+                    <td>10</td>
+                    <td>$10</td>
+                    <td>20</td>
+                    <td>$20</td>
+                </tr>
+                <tr>
+                    <td>$1</td>
+                    <td>10</td>
+                    <td>$10</td>
+                    <td>20</td>
+                    <td>$20</td>
+                </tr>
+                <tr>
+                    <td>$1</td>
+                    <td>10</td>
+                    <td>$10</td>
+                    <td>20</td>
+                    <td>$20</td>
+                </tr>
+                <tr>
+                    <td>$1</td>
+                    <td>10</td>
+                    <td>$10</td>
+                    <td>20</td>
+                    <td>$20</td>
+                </tr>
+                <tr>
+                    <td>$1</td>
+                    <td>10</td>
+                    <td>$10</td>
+                    <td>20</td>
+                    <td>$20</td>
+                </tr>
+                <thead>
+                    <tr>
+                        <th>Total Efectivo</th>
+                        <th>46</th>
+                        <th>$2,275</th>
+                        <th>92</th>
+                        <th>$4,550</th>
+                    </tr>
+                </thead>
+            </table>
+        </section>
+
+    </main>
+    
+</body>
+</html>
