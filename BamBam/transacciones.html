@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="ventas.css">
+    <link rel="stylesheet" href="transacciones.css">
 </head>
+
 <body>
 
     <header>
 
         <nav class="sidebar">
-            
+
             <h2>Pizzeria BAMBAM</h2>
             <a href="index.html">Inicio</a>
             <a href="ventas.html">Ventas</a>
@@ -21,18 +23,89 @@
             <hr>
 
             <div class="menu_inferior">
-                <a href="login/login.html" class="cerrar-sesion">
-                Cerrar sesión
+                <a href="#" class="cerrar-sesion">
+                    Cerrar sesión
                 </a>
             </div>
-            
+
         </nav>
 
     </header>
 
     <main class="contenido">
+        <section class="tabla_contenedor">
+            <table class="tabla_inventario">
+                <thead>
+                    <tr>
+                        <th>Entrada</th>
+                        <th>Cantidad</th>
+                        <th>Precio unidad</th>
+                        <th>Cant. final</th>
+                        <th>Salidas</th>
+                    </tr>  
+                </thead>
+                <tr>
+                    <td>tomate</td>
+                    <td>20kg</td>
+                    <td>$10</td>
+                    <td>15</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>piña</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>queso</td>
+                    <td>10Kg</td>
+                    <td>$10</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>champinion</td>
+                    <td>10 Cajas</td>
+                    <td>$222</td>
+                    <td>333</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>coca</td>
+                    <td>22Lt</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>harina</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>agua</td>
+                    <td>10Pz</td>
+                    <td>$56</td>
+                    <td>10</td>
+                    <td>0</td>
+                </tr>
+                
+             
+                
+            </table>
+        </section>
+        <div class="contenedor-botones">
+            <button class="button">Aceptar </button>
+            <button class="button">Editar </button>
+            <button class="button">Cancelar </button>
+        </div>
 
     </main>
-    
+
 </body>
+
 </html>

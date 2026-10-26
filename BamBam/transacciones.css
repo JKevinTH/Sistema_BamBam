@@ -48,3 +48,59 @@ body {
   margin-left: 240px;  
   padding: 30px;
 }
+
+.tabla_inventario{
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.tabla_inventario thead {
+  background-color: #e7ded4;
+}
+
+.tabla_inventario th {
+  padding: 18px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #5f5956;
+}
+
+.tabla_inventario td {
+  padding: 18px;
+  text-align: left;
+  color: #292524;
+  border-bottom: 1px solid #e7ded4;
+}
+.tabla_inventario td {
+  padding: 18px;
+  text-align: center;
+  color: #292524;
+}
+
+th, td{
+  padding: 10px;
+  background-color: #f2f2f2;
+  border: 1px solid #111010;
+}
+.contenedor-botones{
+  display: flex; /*activa la fila automatica*/
+  gap: 105px; /*este crea la separacion entre los botones*/
+  margin-top: 20px; /* y este hace que el boton este abajo de la taabla*/
+}
+.button{
+  
+  background-color: orange;
+  color:#ffffff;
+  font-size: 14px;
+  font-family: sans-serif;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s easy;
+  
+}
+.button:hover{
+  background-color: #f0e796;
+}
