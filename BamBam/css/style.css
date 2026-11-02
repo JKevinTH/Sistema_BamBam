@@ -9,6 +9,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: #FBF8F4;
 }
 
 .sidebar {
@@ -125,6 +126,7 @@ body {
   background: #c2410c;
   color: #ffffff;
   padding: 13px 24px;
+  margin-top: 8px;
   border-radius: 12px;
   text-decoration: none;
   font-weight: bold;

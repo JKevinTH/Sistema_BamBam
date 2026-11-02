@@ -9,6 +9,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: #FBF8F4;
 }
 
 .sidebar {
@@ -39,7 +40,7 @@ body {
   background: #3a3329;
   color: #fff;
 }
-.sidebar a.activo {
+.sidebar a.ventas-a {
   background: #C2410C;
   color: #fff;
 }
@@ -52,11 +53,22 @@ body {
 .inicio {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  
+}
+
+.inicio_texto label {
+  color: #1F1B16;
+  border: 1px solid #e7ded4;
+  border-radius: 20px;
+  padding: 5px 7px 5px;
+  
   
 }
 
 .inicio_usuario {
-  border: 1px solid #e7ded4;
+  border: 1px solid #aea79f;
   border-radius: 20px;
   padding: 5px 7px 5px;
   margin-bottom: 20px;
@@ -74,6 +86,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 24px 30px;
+  margin-top: 20px;
 }
 
 .campo {
@@ -94,6 +107,32 @@ body {
 
   border: 2px solid #e7e3dc;
   border-radius: 14px;
+}
+
+.campo-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-self: end;
+}
+
+.campo-btn button {
+  font-size: 16px;
+  background: #C2410C;
+  border: 1px solid #C2410C;
+  border-radius: 14px;
+  color: #fff;
+  font-weight: bold;
+  width: 100%;
+  min-height: 50px;
+  cursor: pointer;
+  
+
+}
+
+.campo-btn button:hover {
+  background: #ea580c;
+  
 }
 
 .tabla_contenedor{

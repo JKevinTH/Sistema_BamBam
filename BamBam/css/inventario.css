@@ -9,6 +9,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: #FBF8F4;
 }
 
 .sidebar {
@@ -39,7 +40,7 @@ body {
   background: #3a3329;
   color: #fff;
 }
-.sidebar a.activo {
+.sidebar a.inventario-a {
   background: #C2410C;
   color: #fff;
 }
@@ -49,10 +50,40 @@ body {
   padding: 30px;
 }
 
+.inicio {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.inicio_texto {
+  margin: 0;
+}
+
+.inicio_usuario {
+  border: 1px solid #e7ded4;
+  border-radius: 20px;
+  padding: 5px 7px 5px;
+  margin-bottom: 20px;
+}
+
+.inicio_usuario p {
+  font-size: 13px;
+}
+
+.tabla_contenedor{
+  border: 1px solid hsl(32, 28%, 87%);
+  border-radius: 24px;
+  overflow: hidden;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .tabla_inventario{
   width: 100%;
   border-collapse: collapse;
   text-align: left;
+  
 }
 
 .tabla_inventario thead {
@@ -78,19 +109,15 @@ body {
   color: #292524;
 }
 
-th, td{
-  padding: 10px;
-  background-color: #f2f2f2;
-  border: 1px solid #111010;
-}
+
 .contenedor-botones{
-  display: flex; /*activa la fila automatica*/
-  gap: 105px; /*este crea la separacion entre los botones*/
-  margin-top: 20px; /* y este hace que el boton este abajo de la taabla*/
+  display: flex;
+  gap: 8px; 
+  margin-top: 20px; 
 }
 .button{
   
-  background-color: orange;
+  background-color: #C2410C;
   color:#ffffff;
   font-size: 14px;
   font-family: sans-serif;
@@ -102,5 +129,5 @@ th, td{
   
 }
 .button:hover{
-  background-color: #f0e796;
+  background-color: #ea580c;
 }

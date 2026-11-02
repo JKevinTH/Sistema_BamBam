@@ -4,31 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="corte_caja.css">
+    <link rel="stylesheet" href="css/corte_caja.css">
 </head>
 <body>
 
     <header>
 
-        <nav class="sidebar">
-            
-            <h2>Pizzeria BAMBAM</h2>
-            <a href="index.html">Inicio</a>
-            <a href="ventas.html">Ventas</a>
-            <a href="#" class="activo">Corte de caja</a>
-            <a href="transacciones.html">Inventario</a>
-
-            <hr>
-
-            <div class="menu_inferior">
-                <a href="login/login.html" class="cerrar-sesion">
-                Cerrar sesión
-                </a>
-            </div>
-            
-        </nav>
-
-        
+        <mi-header></mi-header>        
 
     </header>
 
@@ -40,6 +22,7 @@
                 <h1>
                     Corte de Caja
                 </h1>
+                <label for="CJ">Captura las cantidades; los totales se calculan solos.</label>
             </div>
 
             <div class="botones">
@@ -94,69 +77,71 @@
                         <th>Dinero final</th>
                     </tr>  
                 </thead>
-                <tr>
-                    <td>$1</td>
-                    <td>10</td>
-                    <td>$10</td>
-                    <td>20</td>
-                    <td>$20</td>
-                </tr>
-                <tr>
-                    <td>$1</td>
-                    <td>10</td>
-                    <td>$10</td>
-                    <td>20</td>
-                    <td>$20</td>
-                </tr>
-                <tr>
-                    <td>$1</td>
-                    <td>10</td>
-                    <td>$10</td>
-                    <td>20</td>
-                    <td>$20</td>
-                </tr>
-                <tr>
-                    <td>$1</td>
-                    <td>10</td>
-                    <td>$10</td>
-                    <td>20</td>
-                    <td>$20</td>
-                </tr>
-                <tr>
-                    <td>$1</td>
-                    <td>10</td>
-                    <td>$10</td>
-                    <td>20</td>
-                    <td>$20</td>
-                </tr>
-                <tr>
-                    <td>$1</td>
-                    <td>10</td>
-                    <td>$10</td>
-                    <td>20</td>
-                    <td>$20</td>
-                </tr>
-                <tr>
-                    <td>$1</td>
-                    <td>10</td>
-                    <td>$10</td>
-                    <td>20</td>
-                    <td>$20</td>
-                </tr>
-                <tr>
-                    <td>$1</td>
-                    <td>10</td>
-                    <td>$10</td>
-                    <td>20</td>
-                    <td>$20</td>
-                </tr>
-                <tr>
-                    <td>$1</td>
-                    <td>10</td>
-                    <td>$10</td>
-                    <td>20</td>
-                    <td>$20</td>
-                </tr>
+                <tbody>
+                    <tr>
+                        <td>$1</td>
+                        <td class="td-seccion"><input type="number" value="0" min="0"></td>
+                        <td>$10</td>
+                        <td class="td-seccion"><input type="number" value="0" min="0"></td>
+                        <td>$20</td>
+                    </tr>
+                    <tr>
+                        <td>$2</td>
+                        <td class="td-seccion"><input type="number" value="0" min="0"></td>
+                        <td>$10</td>
+                        <td class="td-seccion"><input type="number" value="0" min="0"></td>
+                        <td>$20</td>
+                    </tr>
+                    <tr>
+                        <td>$5</td>
+                        <td class="td-seccion"><input type="number" value="0" min="0"></td>
+                        <td>$25</td>
+                        <td class="td-seccion"><input type="number" value="0" min="0"></td>
+                        <td>$20</td>
+                    </tr>
+                    <tr>
+                        <td>$10</td>
+                        <td class="td-seccion"><input type="number" value="0" min="0"></td>
+                        <td>$100</td>
+                        <td class="td-seccion"><input type="number" value="0" min="0"></td>
+                        <td>$20</td>
+                    </tr>
+                    <tr>
+                        <td>$20</td>
+                        <td class="td-seccion"><input type="number" value="0" min="0"></td>
+                        <td>$80</td>
+                        <td class="td-seccion"><input type="number" value="0" min="0"></td>
+                        <td>$20</td>
+                    </tr>
+                    <tr>
+                        <td>$50</td>
+                        <td class="td-seccion"><input type="number" value="0" min="0"></td>
+                        <td>$250</td>
+                        <td class="td-seccion"><input type="number" value="0" min="0"></td>
+                        <td>$20</td>
+                    </tr>
+                    <tr>
+                        <td>$100</td>
+                        <td class="td-seccion"><input type="number" value="0" min="0"></td>
+                        <td>$200</td>
+                        <td class="td-seccion"><input type="number" value="0" min="0"></td>
+                        <td>$20</td>
+                    </tr>
+                    <tr>
+                        <td>$200</td>
+                        <td class="td-seccion"><input type="number" value="0" min="0"></td>
+                        <td>$600</td>
+                        <td class="td-seccion"><input type="number" value="0" min="0"></td>
+                        <td>$20</td>
+                    </tr>
+                    <tr>
+                        <td>$500</td>
+                        <td class="td-seccion"><input type="number" value="0" min="0"></td>
+                        <td>$1000</td>
+                        <td class="td-seccion"><input type="number" value="0" min="0"></td>
+                        <td>$20</td>
+                    </tr>
+                </tbody>   
                 <thead>
                     <tr>
                         <th>Total Efectivo</th>
@@ -170,6 +155,7 @@
         </section>
 
     </main>
-    
+    <footer></footer>
+    <script src="components/header.js"></script>
 </body>
 </html>
