@@ -55,6 +55,10 @@ body {
   
 }
 
+.inicio_texto {
+  margin: 0;
+}
+
 .inicio_usuario {
   border: 1px solid #e7ded4;
   border-radius: 20px;
