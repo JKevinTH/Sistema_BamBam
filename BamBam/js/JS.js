@@ -1,6 +1,3 @@
-const formulario = document.querySelector("form");
-formulario.addEventListener("submit", function (event) {
-event.preventDefault();
-window.location.href="../index.html";
-});
-
+if (new URLSearchParams(location.search).has("error")) {
+  alert("Usuario o contraseña incorrectos");
+}

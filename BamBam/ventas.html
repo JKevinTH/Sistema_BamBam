@@ -3,24 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ventas</title>
     <link rel="stylesheet" href="css/ventas.css">
 </head>
 <body>
-
     <header>
-
         <mi-header></mi-header>
-
     </header>
 
     <main class="contenido">
 
         <section class="inicio">
-            
+
             <div class="inicio_texto">
                 <h1>Ventas</h1>
-                <label for="venta">No. de venta: 01</label>
+                <span class="num-venta" id="numVenta">No. de venta: 01</span>
             </div>
             <div class="inicio_usuario">
                 <p>Usuario: Alonso</p>
@@ -29,27 +26,27 @@
         </section>
 
         <section class="formulario-venta">
-        
+
             <div class="campo">
                 <label for="producto">Producto</label>
                 <input type="text" id="producto">
             </div>
-        
+
             <div class="campo">
                 <label for="cantidad">Cantidad</label>
-                <input type="text" id="cantidad">
+                <input type="number" id="cantidad" min="1">
             </div>
-        
+
             <div class="campo">
-                <label for="descuento">Descuento</label>
-                <input type="text" id="descuento">
+                <label for="descuento">Descuento (%)</label>
+                <input type="number" id="descuento" min="0" max="100" placeholder="0">
             </div>
-        
+
             <div class="campo">
                 <label for="precio">Precio</label>
-                <input type="text" id="precio" step="0.01">
+                <input type="number" id="precio" min="0" step="0.01">
             </div>
-        
+
             <div class="campo">
                 <label for="pago">Tipo de pago</label>
                 <select id="pago">
@@ -60,42 +57,64 @@
             </div>
 
             <div class="campo-btn">
-                <button>Agregar Venta</button>
+                <button type="button" id="btnAgregar">Agregar Venta</button>
             </div>
 
         </section>
 
+        <h2 class="subtitulo">Venta en curso</h2>
         <section class="tabla_contenedor">
             <table class="tabla_venta">
                 <thead>
                     <tr>
-                        <th>No. venta</th>
                         <th>Producto</th>
                         <th>Cantidad</th>
                         <th>Descuento</th>
                         <th>Precio</th>
-                        <th>Tipo de pago</th>
-                    </tr>  
+                        <th>Total</th>
+                        <th></th>
+                    </tr>
                 </thead>
-
-                <tr>
-                    <td colspan="6">No hay produntos vendidos</td>
-                </tr>
-                
+                <tbody id="tablaVentas"></tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4"><b>Total de la venta</b></td>
+                        <td id="totalVenta">$0.00</td>
+                        <td></td>
+                    </tr>
+                </tfoot>
             </table>
         </section>
 
         <section class="botones">
-            
-            <a href="#" class="boton-finalizar">Finalizar</a>
+            <a href="#" class="boton-finalizar" id="btnFinalizar">Finalizar</a>
             <a href="#" class="boton-editar">Editar</a>
-            <a href="#" class="boton-cancelar">Cancelar</a>
-            
-            
+            <a href="#" class="boton-cancelar" id="btnCancelar">Cancelar</a>
+        </section>
+
+        <h2 class="subtitulo">Ventas registradas</h2>
+        <section class="tabla_contenedor tabla_historial">
+            <table class="tabla_venta tabla_ancha">
+                <thead>
+                    <tr>
+                        <th>No. venta</th>
+                        <th>Fecha</th>
+                        <th>Producto</th>
+                        <th>Cantidad</th>
+                        <th>Precio</th>
+                        <th>Descuento</th>
+                        <th>Total</th>
+                        <th>Pago</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaHistorial"></tbody>
+            </table>
         </section>
 
     </main>
     <footer></footer>
+    <script src="js/sesion.js"></script>
     <script src="components/header.js"></script>
+    <script src="js/ventas.js"></script>
 </body>
 </html>

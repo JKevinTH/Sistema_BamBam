@@ -33,76 +33,30 @@
             <table class="tabla_inventario">
                 <thead>
                     <tr>
-                        <th>Entrada</th>
+                        <th>Código</th>
+                        <th>Nombre</th>
+                        <th>Categoría</th>
                         <th>Cantidad</th>
-                        <th>Precio unidad</th>
-                        <th>Cant. final</th>
-                        <th>Salidas</th>
-                    </tr>  
+                        <th>Unidad</th>
+                        <th>Estado</th>
+                        <th>Actualizado</th>
+                        <th></th>
+                    </tr>
                 </thead>
-                <tr>
-                    <td>tomate</td>
-                    <td>20kg</td>
-                    <td>$10</td>
-                    <td>15</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>piña</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>queso</td>
-                    <td>10Kg</td>
-                    <td>$10</td>
-                    <td>0</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>champinion</td>
-                    <td>10 Cajas</td>
-                    <td>$222</td>
-                    <td>333</td>
-                    <td>20</td>
-                </tr>
-                <tr>
-                    <td>coca</td>
-                    <td>22Lt</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>harina</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>agua</td>
-                    <td>10Pz</td>
-                    <td>$56</td>
-                    <td>10</td>
-                    <td>0</td>
-                </tr>
-                
-             
-                
+                <tbody id="tablaInventario"></tbody>
             </table>
         </section>
         <div class="contenedor-botones">
-            <button class="button">Aceptar </button>
-            <button class="button">Editar </button>
-            <button class="button">Cancelar </button>
+            <button class="button" id="btnAceptar" type="button">Guardar cambios</button>
+            <button class="button" id="btnNuevo" type="button">Agregar insumo</button>
+            <button class="button" id="btnCancelar" type="button">Cancelar</button>
         </div>
 
     </main>
     <footer></footer>
+    <script src="js/sesion.js"></script>
     <script src="components/header.js"></script>
+    <script src="js/inventario.js"></script>
 </body>
 
 </html>
